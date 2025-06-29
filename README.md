@@ -8,3 +8,4 @@
 ![pic 8]( https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%208.jpg  )
 ![pic 9]( https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%209.jpg )
 ![pic 10]( https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2010.jpg )
+![pic 11](https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2011.jpg)
