@@ -5,18 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Construction Co.</title>
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 20px 0;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="logo">Your Construction Co.</div>
+    <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">☰</button>
 
-    <!-- 🔻 Hamburger Button -->
-<button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">☰</button>
-
-
-
-
-    <!-- 🔻 Navigation Menu -->
     <nav id="navMenu">
       <ul>
         <li><a href="#home" onclick="closeMenu()">Home</a></li>
@@ -30,38 +45,39 @@
     <button id="toggleTheme">🌙</button>
   </header>
 
-  <!-- Home Section -->
   <main>
-    <!-- Hero Section -->
-    <section id="home" class="section hero">
-      <div class="container centered-text">
-        <h1>Home Maintenance & Renovations</h1>
-        <p>
-          Welcome to your one-stop solution for professional home improvement. We offer expert services in waterproofing, roofing, full renovations, new builds, bathroom remodeling, tiling, and flooring — including vinyl, laminate, epoxy, and screeding. We also specialize in ceiling installation, drywalling, and partitioning. No matter the size or complexity of your project, we bring top-tier workmanship, reliability, and lasting results.
-        </p>
-        <p>
-          Our goal is to make your home safer, more functional, and beautifully upgraded — all while keeping the process stress-free and seamless. With every project, we focus on delivering value, efficiency, and outstanding customer care.
-        </p>
-      </div>
-    </section>
-  
-    <!-- Promise Section -->
-    <section id="promise" class="section centered-text">
-      <div class="container">
-        <h2>Our Promise</h2>
-        <p>
-          From humble beginnings to a trusted name in the industry, we’ve built a solid reputation on integrity, quality, and customer-first values. Every project is more than just a job — it’s an opportunity to build lasting trust and deliver results that speak for themselves.
-        </p>
-        <p>
-          Together with my skilled team, our commitment to excellence has helped us create guaranteed satisfaction and long-term relationships with our clients. We treat your home like our own — with care, respect, and professionalism you can count on.
-        </p>
-        <p><strong>- Ticha Muyambo<br>Director</strong></p>
-      </div>
-    </section>
-  </main>
-  
-  
-      <!-- Benefits Section -->
+    <!-- Home Section -->
+<section id="home" class="section hero">
+  <div class="container centered-text">
+    <h1>Home Maintenance & Renovations</h1>
+    <p>
+      Welcome to your one-stop solution for professional home improvement. We offer expert services in waterproofing, roofing, full renovations, new builds, bathroom remodeling, tiling, and flooring — including vinyl, laminate, epoxy, and screeding. We also specialize in ceiling installation, drywalling, and partitioning. No matter the size or complexity of your project, we bring top-tier workmanship, reliability, and lasting results.
+    </p>
+    <p>
+      Our goal is to make your home safer, more functional, and beautifully upgraded — all while keeping the process stress-free and seamless. With every project, we focus on delivering value, efficiency, and outstanding customer care.
+    </p>
+  </div>
+</section>
+
+
+
+<!-- Promise Section -->
+<section id="promise" class="section centered-text">
+  <div class="container">
+    <h2>Our Promise</h2>
+    <p>
+      From humble beginnings to a trusted name in the industry, we’ve built a solid reputation on integrity, quality, and customer-first values. Every project is more than just a job — it’s an opportunity to build lasting trust and deliver results that speak for themselves.
+    </p>
+    <p>
+      Together with my skilled team, our commitment to excellence has helped us create guaranteed satisfaction and long-term relationships with our clients. We treat your home like our own — with care, respect, and professionalism you can count on.
+    </p>
+    <p><strong>- Ticha Muyambo<br>Director</strong></p>
+  </div>
+</section>
+
+ </main>
+
+  <!-- Benefits Section -->
 <section id="benefits" class="section">
   <h2>Why Choose Us</h2>
   <ul>
@@ -75,51 +91,61 @@
 </section>
 
 
-  <!-- Stats Section -->
   <section id="stats" class="section">
     <h2>Our Achievements</h2>
     <div class="stats-grid">
       <div class="stat-card">
-        <div class="stat-number" data-target="6">0</div>
+        <div class="stat-number" data-target="6">5</div>
         <div class="stat-label">Years of Experience</div>
       </div>
       <div class="stat-card">
-        <div class="stat-number" data-target="100">0</div>
+        <div class="stat-number" data-target="100">5</div>
         <div class="stat-label">Clients Served</div>
       </div>
       <div class="stat-card">
-        <div class="stat-number" data-target="320">0</div>
+        <div class="stat-number" data-target="100">5</div>
         <div class="stat-label">Projects Completed</div>
       </div>
     </div>
   </section>
 
-    <!-- Services Section -->
+  
+<!-- Services Section -->
 <section id="services" class="section">
   <h2>Our Services</h2>
-  <div class="services-grid no-images">
+  <div class="services-grid">
 
     <div class="service-card">
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%201.jpg   " 
+      alt="Waterproofing & Roofing">
       <h3>Waterproofing & Roofing</h3>
       <p>We specialize in seamless waterproofing systems that protect your home from water damage while saving you money and time. With extensive experience across various roof types — including concrete, IBR, shutter board, and asbestos — we ensure lasting results for balconies, showers, and any vulnerable areas. Our work is precise, reliable, and built to withstand the elements.</p>
     </div>
 
     <div class="service-card">
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%205.jpg    "
+       alt="Building & Renovations">
       <h3>Building & Renovations</h3>
       <p>Whether it's a new build or a full home makeover, our renovation services combine structural integrity with visual beauty. We handle everything from the foundation to the roof, including bricklaying, plastering, skimming, drywalling, partitioning, and alterations — all with an expert eye for detail and quality workmanship that stands the test of time.</p>
     </div>
 
     <div class="service-card">
+      <img src=" https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%203.jpg    " 
+      alt="Bathroom Remodeling">
       <h3>Bathroom Remodeling</h3>
       <p>We turn outdated bathrooms into modern, functional spaces. From small cosmetic upgrades like painting and new fixtures to full structural changes such as moving walls, plumbing, and waterproofing — we handle it all. Our team installs basins, tubs, showers, and tiles to create a relaxing and efficient space tailored to your lifestyle.</p>
     </div>
 
     <div class="service-card">
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%204.jpg          " 
+      alt="Flooring">
       <h3>Flooring</h3>
       <p>Our flooring solutions enhance both the functionality and aesthetic of your space. We expertly install vinyl, laminate, wooden, epoxy, and screeded floors, offering a wide range of styles and finishes to suit your interior. Each installation is handled with precision, ensuring durability and a clean, polished result.</p>
     </div>
 
     <div class="service-card">
+      <img src=" https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2011.jpg   "
+       alt="Ceilings & Drywalls">
       <h3>Ceilings, Drywalls & Partitioning</h3>
       <p>We install modern ceilings and drywall partitions designed to improve acoustics, lighting control, and energy efficiency. Whether you're dividing space in an office or upgrading ceilings at home, our work ensures clean finishes, fire and thermal performance, and a layout that meets your functional and visual needs.</p>
     </div>
@@ -127,9 +153,12 @@
   </div>
 </section>
 
-      
 
-  
+
+
+
+
+
 
 
 
@@ -142,14 +171,29 @@
   <section id="gallery" class="section">
     <h2>Check Our Work</h2>
     <div class="gallery-grid">
-      <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Project 1" />
-      <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Project 2" />
-      <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3" />
-      <img src="https://via.placeholder.com/300x200?text=Project+4" alt="Project 4" />
+      <img src=" https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2012.jpg   "
+       alt="Pic 1" />
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%202.jpg  "
+       alt="Pic 2" />
+      <img src=" https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2013.jpg  " 
+      alt="Pic 3" />
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2014.jpg      "
+       alt="Pic 4" />
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2015.jpg   "
+       alt="pic 5" />
+      <img src=" https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%206.jpg "
+       alt="Pic 6" />
+      <img src=" https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%207.jpg " 
+      alt="Pic  7" />
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%208.jpg " 
+      alt="Pic  8" />
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%209.jpg "
+       alt="Pic 9" />
+      <img src="https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2010.jpg "
+       alt="Pic 10" />
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="section">
     <h2>Contact Us</h2>
     <form id="contactForm" class="contact-form">
