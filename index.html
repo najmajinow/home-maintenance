@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Construction Co.</title>
+  <title>home maintenance.</title>
   <link rel="stylesheet" href="style.css" />
 
   <style>
@@ -29,7 +29,7 @@
 </head>
 <body>
   <header>
-    <div class="logo">Your Construction Co.</div>
+    <div class="logo">Home maintenance.</div>
     <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">☰</button>
 
     <nav id="navMenu">
@@ -38,6 +38,7 @@
         <li><a href="#benefits" onclick="closeMenu()">Benefits</a></li>
         <li><a href="#stats" onclick="closeMenu()">Stats</a></li>
         <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li> <a href="#Gallery" onclick="closeMenu()"> Gallery</a></li>
         <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
       </ul>
     </nav>
@@ -199,13 +200,17 @@
     <form id="contactForm" class="contact-form">
       <input type="text" id="name" placeholder="Your Full Name" required />
       <input type="email" id="email" placeholder="Your Email Address" required />
+      <input type="home address" id="home Address" placeholder="Your home address" required/>
       <select id="service" required>
         <option value="">Choose a Service</option>
-        <option value="Renovations">Renovations</option>
-        <option value="Painting">Painting</option>
-        <option value="Plumbing">Plumbing</option>
+        <option value="Renovations & builds">Renovations & builds</option>
+        <option value="flooring">flooring</option>
+        <option value="roofing">roofing</option>
         <option value="Waterproofing">Waterproofing</option>
-        <option value="Tiling">Tiling</option>
+        <option value="bathroom remodeling">bathroom remodeling</option>
+        <option value="ceilings"> ceilings</option>
+        <option value="Drywalls"> Drywalls</option>
+        <option value="partitioning"> partitioning</option>
       </select>
       <textarea id="message" placeholder="Write your message here..." required></textarea>
       <button type="submit" class="btn">Send Message</button>
