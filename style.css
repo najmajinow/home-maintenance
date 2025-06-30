@@ -62,7 +62,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  transition: top 0.3s ease;
+  transition: top 0.3s;
+}
+
+header.hide {
+  top: -100px;
 }
 
 .logo {
@@ -142,7 +146,7 @@ body.dark .stat-card {
 /* Gallery Section */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
@@ -195,7 +199,6 @@ footer {
   padding-left: 25px;
 }
 
-/* Optional: checkmark icon before each list item */
 .why-choose-us li::before {
   content: "✔️";
   position: absolute;
@@ -233,7 +236,7 @@ footer {
     font-size: 1rem;
   }
 
-  /* Show 2 images per row in gallery on mobile */
+  /* Force 2 columns on mobile */
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
