@@ -13,3 +13,4 @@
 ![pic 13]( https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2013.jpg  )
 ![pic 14](https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2014.jpg  )
 ![pic 15]( https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2015.jpg  )
+![pic 16](https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2016.JPG)
