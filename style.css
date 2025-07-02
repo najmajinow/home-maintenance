@@ -254,7 +254,6 @@ footer {
 /* Hero Section */
 .hero {
   position: relative;
-  background-image: url('https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2016.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -266,4 +265,14 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 2rem;
+}
+
+
+/* Fix for Home and Our Promise text in Dark Mode */
+body.dark .section,
+body.dark .section p,
+body.dark .section h1,
+body.dark .section h2,
+body.dark .section h3 {
+  color: white;
 }
