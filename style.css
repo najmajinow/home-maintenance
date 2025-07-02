@@ -18,6 +18,11 @@ body.dark {
   color: #f5f5f5;
 }
 
+/* Home page paragraph text */
+body.home p {
+  color: #000;
+}
+
 .section {
   padding: 60px 20px;
   text-align: center;
@@ -55,7 +60,7 @@ p {
 header {
   background-color: #b33939;
   color: white;
-  padding: 10px;
+  padding: 10px; /* smaller header */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -242,17 +247,14 @@ footer {
   }
 }
 
-
-
-
-
+/* Hero Section */
 .hero {
   position: relative;
   background-image: url('https://raw.githubusercontent.com/najmajinow/home-maintenance/refs/heads/main/pic%2016.JPG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: black;
   z-index: 1;
   min-height: 100vh; /* Ensure full-screen height */
   display: flex;
@@ -261,4 +263,3 @@ footer {
   text-align: center;
   padding: 2rem;
 }
-
